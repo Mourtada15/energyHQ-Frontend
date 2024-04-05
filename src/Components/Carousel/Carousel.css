@@ -1,0 +1,16 @@
+.banner-carousel {
+    /* height: calc(100vh - 380px); */
+    width: 50%;
+    margin: auto;
+    padding-top: 115px;
+    /* background-color: red; */
+  }
+  
+  .d-block{
+    /* height: 57vh; */
+    max-height: 15vh;
+  }
+  
+  .carousel-item img {
+    object-fit: fill;
+  }

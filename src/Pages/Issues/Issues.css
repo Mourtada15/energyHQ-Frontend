@@ -1,0 +1,12 @@
+.issues-container {
+    width: 90%;
+    margin: auto;
+    background-color: red;
+}
+
+.issue-card {
+    width: 200px;
+}
+.issue-card img {
+    width: 100%;
+}

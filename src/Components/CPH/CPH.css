@@ -1,0 +1,26 @@
+.cph-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    /* background-color: #fcf2e8; */
+}
+.cph-wrapper h1 {
+    color: #E07F17;
+    /* color: #595959; */
+}
+
+.cph-brands {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.cph-brands img {
+    transition: all 0.2s ease-in-out;
+}
+.cph-brands img:hover {
+    scale: 1.1;
+}

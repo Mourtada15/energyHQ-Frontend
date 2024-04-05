@@ -1,0 +1,10 @@
+.carousel-slide {
+    /* height: calc(100vh - 380px); */
+    width: 160px;
+    /* margin: auto; */
+    background-color: red;
+  }
+  
+  .carousel-item img {
+    object-fit: fill;
+  }
