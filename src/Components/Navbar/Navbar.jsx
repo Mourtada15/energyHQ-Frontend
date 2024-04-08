@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState(""); // State to hold search query
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-
 
   const handleSearch = (e) => {
     e.preventDefault();

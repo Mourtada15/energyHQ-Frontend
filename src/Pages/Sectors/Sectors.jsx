@@ -44,7 +44,7 @@ const Sectors = () => {
             </div>
             
             <div className="sectors-wrapper">
-                <h2>Oil & Gaz</h2>
+                <h2>Oil & Gas</h2>
                 <div className="inner-latest-news-wrapper" >
                     <div className="latest-news" >
                         <img src="test.jpg" alt="" />
