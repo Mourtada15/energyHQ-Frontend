@@ -36,13 +36,13 @@ const Navbar = () => {
                 <Link className="nav-link nav-link-home" aria-current="page" to="/issues">ISSUES</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/">MEDIA KIT</Link>
+                <Link className="nav-link nav-link-home" aria-current="page" to="https://energyhq.world/energyHQ_Media%20Kit_2023.pdf">MEDIA KIT</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/">RATES</Link>
+                <Link className="nav-link nav-link-home" aria-current="page" to="#">RATES</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/">PACKAGES</Link>
+                <Link className="nav-link nav-link-home" aria-current="page" to="#">PACKAGES</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link nav-link-home" aria-current="page" to="/contactus">CONTACT US</Link>

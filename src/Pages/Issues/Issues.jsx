@@ -5,17 +5,46 @@ import "./Issues.css";
 
 const Issues = () => {
   return (
-    <>
+    <div className="issues-wrapper">
       <Navbar />
       <Carousel />
       <div className="issues-container">
         <div className="issue-card" >
           <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
-          <h6>energyHQ March 2024</h6>
+          <p>energyHQ March 2024</p>
+        </div>
+
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
+        </div>
+        <div className="issue-card" >
+          <img src="EnergyHQ - january-february 2024 Cover.jpg" alt="" />
+          <p>energyHQ March 2024</p>
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

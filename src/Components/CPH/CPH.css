@@ -19,8 +19,8 @@
 }
 
 .cph-brands img {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .cph-brands img:hover {
-    scale: 1.1;
+    scale: 1.05;
 }

@@ -8,7 +8,7 @@ const Footer = () => {
                 <div>
                     <h5 className="footer-about-us-header"><b>About Us</b></h5>
                     <ul className="footer-about-us">
-                        <li><a href="">About MarketEase</a></li>
+                        <li><a href="">About energyHQ</a></li>
                         <li><a href="">Terms & Conditions</a></li>
                         <li><a href="">Privacy Policy</a></li>
                         <li><a href="">FAQs</a></li>
