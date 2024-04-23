@@ -1,0 +1,9 @@
+.sidebar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling for sidebar content (optional) */
+    background-color: blue;
+}

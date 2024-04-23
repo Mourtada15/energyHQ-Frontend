@@ -1,0 +1,5 @@
+.dashboardbanners-wrapper {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+}
