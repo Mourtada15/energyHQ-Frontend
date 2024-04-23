@@ -17,26 +17,6 @@
     transition: all 0.2s ease-in-out;
   }
   
-  .nav-link:hover {
-    color: #5bb3ff;
-  }
-  
-  .nav-link-cta {
-    background-color: rgb(13, 110, 253);
-    border-radius: 8px;
-    color: white;
-    width: 8vw;
-    text-align: center;
-  }
-  
-  .nav-link-cta:hover {
-    color: white;
-    background-color: hsl(216, 98%, 35%);
-  }
-  .nav-link-cta-hide {
-    display: none;
-  }
-  
   .me-auto {
     margin-right: unset !important;
   }
@@ -66,6 +46,10 @@
     /* border-bottom: 1px solid #E07F17; */
   }
 
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #E07F17;
+}
+
   
   @media screen and (max-width: 991px) {
     .nav-link-cta {
@@ -88,15 +72,3 @@
       margin-left: unset;
     }
   }
-  
-  
-  
-  /* @media screen and (max-width: 991px) {
-    .nav-link-cta {
-      width: 50%;
-    }
-  
-    .navbar-nav {
-      padding-left: 0rem;
-    }
-  } */

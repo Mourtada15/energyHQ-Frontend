@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
@@ -24,25 +24,25 @@ const Navbar = () => {
 
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/">HOME</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/">HOME</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/sectors">SECTORS</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/sectors">SECTORS</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/issues">ISSUES</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/issues">ISSUES</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="https://energyhq.world/energyHQ_Media%20Kit_2023.pdf">MEDIA KIT</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="https://energyhq.world/energyHQ_Media%20Kit_2023.pdf">MEDIA KIT</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="#">RATES</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/rates">RATES</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="#">PACKAGES</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/packages">PACKAGES</NavLink>
               </li>
               <li className="nav-item">
-                <Link className="nav-link nav-link-home" aria-current="page" to="/contactus">CONTACT US</Link>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="/contactus">CONTACT US</NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search" onSubmit={handleSearch}>
