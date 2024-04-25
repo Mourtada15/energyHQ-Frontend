@@ -8,6 +8,7 @@ import DashboardHome from './Dashboard/Home/DashboardHome';
 import DashboardIssues from './Dashboard/Issues/DashboardIssues';
 import DashboardBanners from './Dashboard/Banners/DashboardBanners';
 import Login from './Dashboard/Login/Login';
+import Articles from './Components/Articles/Articles';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/sectors" element={<Sectors />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/issues" element={<Issues />} />
+        <Route path="/articles" element={<Articles />} />
         <Route path="/admin" element={<DashboardHome />} >
           <Route path="issues" element={<DashboardIssues />} />
           <Route path="banners" element={<DashboardBanners />} />

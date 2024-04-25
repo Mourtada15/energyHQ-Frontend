@@ -1,4 +1,5 @@
 import "./Body.css";
+import { Link } from "react-router-dom";
 
 const Body = () => {
     return (
@@ -11,7 +12,7 @@ const Body = () => {
                         <h4>Header test</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos nam nesciunt nisi repudiandae magnam! Voluptate rem, eius eveniet blanditiis et totam earum quos laudantium laboriosam consectetur? Iusto nemo minus consequatur!
                             Minima omnis voluptates cum, officia repudiandae laudantium exercitationem repellendus facilis placeat excepturi? Vero, odio optio mollitia consequatur aliquid cupiditate at temporibus architecto quisquam nesciunt fugit aliquam maiores dolorum, illum aperiam?</p>
-                        <button>Read more</button>
+                        <Link to="./articles"><button>Read more</button></Link>
                     </div>
                 </div>
 

@@ -25,6 +25,11 @@
     border-radius: 6px;
     color: white;
     padding: 0.2rem 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+.latest-news button:hover {
+    background-color: hsl(31, 81%, 42%);
+    color: white;
 }
 
 .inner-latest-news-wrapper {
