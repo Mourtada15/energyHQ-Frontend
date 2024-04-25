@@ -1,5 +1,39 @@
 .dashboardbanners-wrapper {
+    display: flex;
+    flex-direction: column;
     flex: 1;
     overflow-y: auto;
-    background-color: #f0f0f0;
+    margin-left: 200px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.dashboardbanners-wrapper div img {
+    width: 40vw;
+    padding-bottom: 1rem;
+}
+
+.dashboardbanners-card {
+    background-color: hsl(240, 5%, 90%);
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboardbanners-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.dashboardbanners-buttons button {
+    width: 100px;
+    color: white;
+}
+.dashboardbanners-buttons button:first-child {
+    background-color: green;
+}
+.dashboardbanners-buttons button:nth-child(2) {
+    background-color: red;
 }
