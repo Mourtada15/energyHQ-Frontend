@@ -9,6 +9,7 @@ import DashboardIssues from './Dashboard/Issues/DashboardIssues';
 import DashboardBanners from './Dashboard/Banners/DashboardBanners';
 import Login from './Dashboard/Login/Login';
 import Articles from './Components/Articles/Articles';
+import DashboardSectors from './Dashboard/Sectors/DashboardSectors';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/articles" element={<Articles />} />
         <Route path="/admin" element={<DashboardHome />} >
           <Route path="issues" element={<DashboardIssues />} />
-          {/* <Route path="sectors" element={<DashboardIssues />} /> */}
+          <Route path="sectors" element={<DashboardSectors />} />
           <Route path="banners" element={<DashboardBanners />} />
         </Route>
         <Route path="/login" element={<Login />} /> 
