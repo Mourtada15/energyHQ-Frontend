@@ -6,7 +6,7 @@
 
 /* CSS to set background image */
 .background-container {
-    background-image: url("C:\Users\h.mourtada\Desktop\Dev\energyHQ\energyHQ-Frontend\public\energy-bgg.jpg");
+    background-image: url("/home/mourtada/Desktop/energyHQ/energyHQ-Frontend/public/energy-bgg.jpg");
     /* Replace 'path/to/your/image.jpg' with the actual path to your image */
 
     background-size: cover;
