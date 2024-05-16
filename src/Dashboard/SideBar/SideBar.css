@@ -30,8 +30,8 @@
 }
 
 .sidebar-container ul a,
-h4,
-h6 {
+.sidebar-container ul h4,
+.sidebar-container ul h6 {
   display: flex;
   align-items: center;
   justify-content: center;

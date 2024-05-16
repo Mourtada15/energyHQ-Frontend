@@ -33,7 +33,7 @@ const Navbar = () => {
                 <NavLink className="nav-link nav-link-home" aria-current="page" to="/issues">ISSUES</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link nav-link-home" aria-current="page" to="https://energyhq.world/energyHQ_Media%20Kit_2023.pdf">MEDIA KIT</NavLink>
+                <NavLink className="nav-link nav-link-home" aria-current="page" to="https://www.energyhq.world/energyHQ_Media%20Kit_2024.pdf" target="_blank">MEDIA KIT</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link nav-link-home" aria-current="page" to="/rates">RATES</NavLink>
