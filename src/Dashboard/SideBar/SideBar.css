@@ -23,15 +23,20 @@
   padding: 0;
 }
 
+.sidebar-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sidebar-container h4 {
   font-size: 2.2rem;
-  color: inherit;
+  color: inherit !important;
   text-shadow: 0px 0px 10px rgba(89, 89, 89, 1);
 }
 
 .sidebar-container ul a,
-.sidebar-container ul h4,
-.sidebar-container ul h6 {
+.sidebar-container h4,
+.sidebar-wrapper h6 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +53,6 @@
 .sidebar-navlink:hover,
 h6:hover {
   background-color: #A9A9A9;
-  /* background-color: #E07F17; */
   color: inherit;
 }
 

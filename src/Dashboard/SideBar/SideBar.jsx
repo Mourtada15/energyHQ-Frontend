@@ -1,12 +1,12 @@
 import './SideBar.css';
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const SideBar = () => {
 
   return (
     <div className="sidebar-wrapper" >
       <div className='sidebar-container'>
-        <h4>energy <span style={{color: '#A9A9A9'}}>HQ</span></h4>
+        <Link to="/admin"><h4>energy <span style={{color: '#A9A9A9'}}>HQ</span></h4></Link>
         <ul>
           <NavLink className="sidebar-navlink" to='/admin/issues'><li>Issues</li></NavLink>
           <NavLink className="sidebar-navlink" to='/admin/sectors'><li>Sectors</li></NavLink>

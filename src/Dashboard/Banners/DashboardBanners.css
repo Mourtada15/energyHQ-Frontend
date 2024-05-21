@@ -22,6 +22,10 @@
     align-items: center;
 }
 
+.dashboardbanners-card div p {
+    font-weight: bold;
+}
+
 .dashboardbanners-buttons {
     display: flex;
     gap: 1rem;
@@ -30,10 +34,17 @@
 .dashboardbanners-buttons button {
     width: 100px;
     color: white;
+    transition: all 0.2s ease-in-out;
 }
 .dashboardbanners-buttons button:first-child {
     background-color: green;
 }
+.dashboardbanners-buttons button:first-child:hover {
+    background-color: hsl(120, 100%, 17%);
+}
 .dashboardbanners-buttons button:nth-child(2) {
     background-color: red;
+}
+.dashboardbanners-buttons button:nth-child(2):hover {
+    background-color: hsl(0, 100%, 42%);
 }
