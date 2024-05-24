@@ -1,16 +1,40 @@
 import React, { useState } from 'react';
-import "./DashboardBanners.css";
+import ConfirmationModal from '../../Components/ConfirmationModal/ConfirmationModal';
+import './DashboardBanners.css';
 
 const DashboardBanners = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [bannerTitle, setBannerTitle] = useState('Middle East Energy Dubai');
-  const [bannerImage, setBannerImage] = useState('/website Leaderboard.png');
+  const [bannerImage, setBannerImage] = useState('/Website Leaderboard.png');
+  const [newImage, setNewImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleDelete = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleConfirmDelete = () => {
+    setIsModalOpen(false);
+    // Add your delete logic here
+    console.log('Item deleted');
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   const handleEditClick = () => {
     setIsEditing(true);
   };
 
   const handleSaveClick = () => {
+    if (newImage) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setBannerImage(reader.result);
+      };
+      reader.readAsDataURL(newImage);
+    }
     setIsEditing(false);
   };
 
@@ -19,7 +43,10 @@ const DashboardBanners = () => {
   };
 
   const handleImageChange = (e) => {
-    setBannerImage(e.target.value);
+    const file = e.target.files[0];
+    if (file) {
+      setNewImage(file);
+    }
   };
 
   return (
@@ -27,7 +54,7 @@ const DashboardBanners = () => {
       <h1>Banners Page</h1>
 
       <div className="dashboardbanners-card">
-        <div>
+        <div className={isEditing ? 'dashboardbanners-card-inner' : ''}>
           {isEditing ? (
             <>
               <input
@@ -36,10 +63,9 @@ const DashboardBanners = () => {
                 onChange={handleTitleChange}
               />
               <input
-                type='image'
-                value={bannerImage}
+                type="file"
+                accept="image/*"
                 onChange={handleImageChange}
-                placeholder="Image URL"
               />
             </>
           ) : (
@@ -55,7 +81,13 @@ const DashboardBanners = () => {
           ) : (
             <button onClick={handleEditClick}>Edit</button>
           )}
-          <button>Delete</button>
+          <button onClick={handleDelete}>Delete</button>
+          <ConfirmationModal
+            isOpen={isModalOpen}
+            onRequestClose={handleCloseModal}
+            onConfirm={handleConfirmDelete}
+          />
+
         </div>
       </div>
     </div>
@@ -63,24 +95,3 @@ const DashboardBanners = () => {
 };
 
 export default DashboardBanners;
-
-//   return (
-//     <div className="dashboardbanners-wrapper" >
-//       <h1>Banners Page</h1>
-
-//       <div className="dashboardbanners-card">
-//         <div>
-//           <p className="banner-title">Middle East Energy Dubai</p>
-//           <img src="/Website Leaderboard.png" alt="Banner" />
-//         </div>
-//         <div className="dashboardbanners-buttons">
-//           <button>Edit</button>
-//           <button>Delete</button>
-//         </div>
-//       </div>
-    
-//     </div>
-//   );
-// }
-
-// export default DashboardBanners;

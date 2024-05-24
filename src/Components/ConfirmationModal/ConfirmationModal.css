@@ -1,0 +1,37 @@
+.model-customized {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem auto 0px auto;
+}
+
+.model-customized-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.model-customized-buttons button {
+    width: 100px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.model-customized-buttons button:first-child {
+    background-color: red;
+}
+
+.model-customized-buttons button:nth-child(2) {
+    background-color: green;
+}
+
+.model-customized-buttons button:first-child:hover {
+    background-color: hsl(0, 100%, 42%);
+}
+
+.model-customized-buttons button:nth-child(2):hover {
+    background-color: hsl(120, 100%, 17%);
+}

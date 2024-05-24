@@ -15,11 +15,16 @@
 
 .dashboardbanners-card {
     background-color: hsl(240, 5%, 90%);
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.dashboardbanners-card-inner {
+    display: flex;
+    gap: 1rem;
 }
 
 .dashboardbanners-card div p {
@@ -36,15 +41,19 @@
     color: white;
     transition: all 0.2s ease-in-out;
 }
+
 .dashboardbanners-buttons button:first-child {
     background-color: green;
 }
+
 .dashboardbanners-buttons button:first-child:hover {
     background-color: hsl(120, 100%, 17%);
 }
+
 .dashboardbanners-buttons button:nth-child(2) {
     background-color: red;
 }
+
 .dashboardbanners-buttons button:nth-child(2):hover {
     background-color: hsl(0, 100%, 42%);
 }
