@@ -60,3 +60,8 @@ h6:hover {
   cursor: pointer;
   background-color: red;
 }
+
+.sidebar-active {
+  background-color: #A9A9A9;
+  color: inherit !important;
+}

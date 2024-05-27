@@ -8,3 +8,18 @@
     gap: 1rem;
     /* background-color: red; */
 }
+
+.btn-dashboard-issues {
+    background-color: #E07F17;
+    color: white;
+}
+.btn-dashboard-issues:hover {
+    background-color: hsl(31, 81%, 43%);
+    color: white;
+}
+
+.dashboardissues-issue-detail {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4rem;
+}

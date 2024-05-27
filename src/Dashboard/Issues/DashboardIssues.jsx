@@ -1,24 +1,65 @@
+import { Link } from 'react-router-dom';
 import './DashboardIssues.css';
 
 const DashboardIssues = () => {
   return (
     <div className="dashboardissues-wrapper">
-      <p class="d-inline-flex gap-1">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <p className="d-inline-flex gap-1">
+        <Link className="btn btn-dashboard-issues" to='/admin/issues/createissue'>
           Create Issue
-        </button>
+        </Link>
       </p>
 
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          <p>Title <input type='text' /></p>
-          <p>Date <input type='date' /></p>
-          <p>Ebook <input type='file' /></p>
-          <p>Cover <input type='file' /></p>
-          <div>
-            <button>Save & Publish</button>
-          </div>
+      <div>
+        <div>
+          <table className="table table-striped">
+            <thead>
+              <tr >
+                <th>Issue</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>energyHQ May 2024</td>
+                <td>May 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ June 2024</td>
+                <td>June 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ July 2024</td>
+                <td>July 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ May 2024</td>
+                <td>May 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ June 2024</td>
+                <td>June 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ July 2024</td>
+                <td>July 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ May 2024</td>
+                <td>May 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ June 2024</td>
+                <td>June 24, 2024</td>
+              </tr>
+              <tr>
+                <td>energyHQ July 2024</td>
+                <td>July 24, 2024</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+
       </div>
 
     </div>

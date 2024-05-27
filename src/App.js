@@ -10,6 +10,7 @@ import DashboardBanners from './Dashboard/Banners/DashboardBanners';
 import Login from './Dashboard/Login/Login';
 import Articles from './Components/Articles/Articles';
 import DashboardSectors from './Dashboard/Sectors/DashboardSectors';
+import CreateIssue from './Dashboard/Issues/CreateIssue/CreateIssue';
 
 function App() {
   return (
@@ -21,11 +22,14 @@ function App() {
         <Route path="/issues" element={<Issues />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/admin" element={<DashboardHome />} >
-          <Route path="issues" element={<DashboardIssues />} />
+          {/* <Route index element={<DashboardIssues />} /> */}
+          <Route path="issues" element={<DashboardIssues />} >
+            <Route path="createissue" element={<CreateIssue />} />
+          </Route>
           <Route path="sectors" element={<DashboardSectors />} />
           <Route path="banners" element={<DashboardBanners />} />
         </Route>
-        <Route path="/login" element={<Login />} /> 
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
