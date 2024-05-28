@@ -23,3 +23,13 @@
     justify-content: space-between;
     padding-right: 4rem;
 }
+
+.table tbody tr td a {
+    text-decoration: none;
+}
+.table tbody tr td a[a='Edit'] {
+    color: green;
+}
+.table tbody tr td a {
+    color: red;
+}

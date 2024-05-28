@@ -1,14 +1,12 @@
-import './CreateIssue.css';
+import './AddSector.css';
 
-const CreateIssue = () => {
+const AddSector = () => {
   return (
     <div className="createissue-wrapper">
-      <h1>Create Issue</h1>
+      <h1>Add a Sector</h1>
       <div className="card card-body">
-        <p>Title <input type='text' /></p>
+        <p>Name <input type='text' /></p>
         <p>Date <input type='date' /></p>
-        <p>Ebook <input type='file' /></p>
-        <p>Cover <input type='file' /></p>
         <div>
           <button className='btn-dashboard-issues'>Save & Publish</button>
         </div>
@@ -17,4 +15,4 @@ const CreateIssue = () => {
   );
 }
 
-export default CreateIssue;
+export default AddSector;
