@@ -72,7 +72,7 @@ const DashboardBanners = () => {
             <>
               <p>{bannerTitle}</p>
               <img src={bannerImage} alt="Banner" />
-            </>
+            </> 
           )}
         </div>
         <div className="dashboardbanners-buttons">
@@ -87,7 +87,6 @@ const DashboardBanners = () => {
             onRequestClose={handleCloseModal}
             onConfirm={handleConfirmDelete}
           />
-
         </div>
       </div>
     </div>

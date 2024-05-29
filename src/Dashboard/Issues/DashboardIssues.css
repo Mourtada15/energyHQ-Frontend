@@ -27,9 +27,9 @@
 .table tbody tr td a {
     text-decoration: none;
 }
-.table tbody tr td a[a='Edit'] {
+.edit-link {
     color: green;
 }
-.table tbody tr td a {
+.delete-link {
     color: red;
 }
