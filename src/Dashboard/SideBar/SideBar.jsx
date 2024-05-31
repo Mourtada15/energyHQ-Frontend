@@ -9,9 +9,9 @@ const SideBar = () => {
         <Link to="/admin"><h4>energy <span style={{color: '#A9A9A9'}}>HQ</span></h4></Link>
         <ul>
           <NavLink className="sidebar-navlink" to='/admin/issues'><li>Issues</li></NavLink>
-          <NavLink className="sidebar-navlink" to='/admin/sectors'><li>Sectors</li></NavLink>
+          <NavLink className="sidebar-navlink" to='/admin/sectors/addsector'><li>Sectors</li></NavLink>
           <NavLink className="sidebar-navlink" to='/admin/banners'><li>Banners</li></NavLink>
-          <NavLink className="sidebar-navlink" to='/admin/other' target='_blank'><li>Other</li></NavLink>
+          <NavLink className="sidebar-navlink" to='/admin/mediakit'><li>Media Kit</li></NavLink>
         </ul>
       </div>
       <h6>Log out</h6>

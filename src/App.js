@@ -8,10 +8,10 @@ import DashboardIssues from './Dashboard/Issues/DashboardIssues';
 import DashboardBanners from './Dashboard/Banners/DashboardBanners';
 import Login from './Dashboard/Login/Login';
 import Articles from './Components/Articles/Articles';
-import DashboardSectors from './Dashboard/Sectors/DashboardSectors';
 import CreateIssue from '../src/Dashboard/Issues/CreateIssue/CreateIssue'
 import SideBar from './Dashboard/SideBar/SideBar';
 import AddSector from './Dashboard/Sectors/AddSector/AddSector';
+import MediaKit from './Dashboard/MediaKit/MediaKit';
 
 function App() {
   return (
@@ -37,9 +37,10 @@ const DashboardLayout = () => {
         <Route index element={<DashboardIssues />} />
         <Route path="issues" element={<DashboardIssues />} />
         <Route path="/issues/createissue" element={<CreateIssue />} />
-        <Route path="sectors" element={<DashboardSectors />} />
+        {/* <Route path="sectors" element={<DashboardSectors />} /> */}
         <Route path="/sectors/addsector" element={<AddSector />} />
         <Route path="banners" element={<DashboardBanners />} />
+        <Route path="mediakit" element={<MediaKit />} />
       </Routes>
     </div>
   );

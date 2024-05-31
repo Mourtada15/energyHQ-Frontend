@@ -1,14 +1,26 @@
 import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import ConfirmationModal from '../../Components/ConfirmationModal/ConfirmationModal';
 import './DashboardIssues.css';
-
-import { ConfirmDialog } from 'primereact/confirmdialog';
-import { Toast, toast } from 'primereact/toast';
-import { Button } from 'primereact/button'
-import { confirm2 } from 'primereact/confirm'
-
 
 const DashboardIssues = () => {
   const { pathname } = useLocation();
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleDelete = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleConfirmDelete = () => {
+    setIsModalOpen(false);
+    // Add your delete logic here
+    console.log('Item deleted');
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <>
@@ -20,7 +32,6 @@ const DashboardIssues = () => {
               Create Issue
             </Link>
           )}
-
         </p>
 
         <table className="table table-striped">
@@ -33,66 +44,43 @@ const DashboardIssues = () => {
           </thead>
           <tbody>
             <tr>
-              <td>energyHQ May 2024</td>
-              <td>May 24, 2024</td>
+              <td>energyHQ July 2024</td>
+              <td>July 24, 2024</td>
               <td><Link className="edit-link">Edit</Link></td>
-              <td><Link className="delete-link">Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ June 2024</td>
-              <td>June 24, 2024</td>
-              <td><Link className="edit-link">Edit</Link></td>
-              <td><Link className="delete-link">Delete</Link></td>
+              <td><Link className="delete-link" onClick={handleDelete}>Delete</Link></td>
+              <ConfirmationModal
+                isOpen={isModalOpen}
+                onRequestClose={handleCloseModal}
+                onConfirm={handleConfirmDelete}
+              />
             </tr>
             <tr>
               <td>energyHQ July 2024</td>
               <td>July 24, 2024</td>
               <td><Link className="edit-link">Edit</Link></td>
-              <td><Link className="delete-link">Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ May 2024</td>
-              <td>May 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              <td><Link>Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ June 2024</td>
-              <td>June 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              <td><Link>Delete</Link></td>
+              <td><Link className="delete-link" onClick={handleDelete}>Delete</Link></td>
+              <ConfirmationModal
+                isOpen={isModalOpen}
+                onRequestClose={handleCloseModal}
+                onConfirm={handleConfirmDelete}
+              />
             </tr>
             <tr>
               <td>energyHQ July 2024</td>
               <td>July 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              <td><Link>Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ May 2024</td>
-              <td>May 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              <td><Link>Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ June 2024</td>
-              <td>June 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              <td><Link>Delete</Link></td>
-            </tr>
-            <tr>
-              <td>energyHQ July 2024</td>
-              <td>July 24, 2024</td>
-              <td><Link>Edit</Link></td>
-              {/* <td><Link>Delete</Link></td> */}
-              <Toast ref={toast} />
-              <ConfirmDialog />
-              <Button onClick={confirm2} icon="pi pi-times" label="Delete"></Button>
+              <td><Link className="edit-link">Edit</Link></td>
+              <td><Link className="delete-link" onClick={handleDelete}>Delete</Link></td>
+              <ConfirmationModal
+                isOpen={isModalOpen}
+                onRequestClose={handleCloseModal}
+                onConfirm={handleConfirmDelete}
+              />
             </tr>
           </tbody>
         </table>
-      </div >
+      </div>
     </>
+
   );
 }
 

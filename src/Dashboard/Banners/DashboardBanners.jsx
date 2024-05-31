@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { InputText } from "primereact/inputtext";
+import { FileUpload } from 'primereact/fileupload';
+import { Calendar } from 'primereact/calendar';
 import ConfirmationModal from '../../Components/ConfirmationModal/ConfirmationModal';
 import './DashboardBanners.css';
 
@@ -8,6 +11,8 @@ const DashboardBanners = () => {
   const [bannerImage, setBannerImage] = useState('/Website Leaderboard.png');
   const [newImage, setNewImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [value, setValue] = useState('');
+  const [date, setDate] = useState(null);
 
   const handleDelete = () => {
     setIsModalOpen(true);
@@ -52,6 +57,30 @@ const DashboardBanners = () => {
   return (
     <div className="dashboardbanners-wrapper">
       <h1>Banners Page</h1>
+      <div className='card p-3 d-flex flex-column gap-3'>
+        <div className="card card-body d-flex flex-row justify-content-between">
+          <div className="d-flex gap-4">
+            <div className="d-flex align-items-center gap-2">
+              <label htmlFor="buttondisplay" className="font-bold block mb-2">
+                Title
+              </label>
+              <InputText value={value} onChange={(e) => setValue(e.target.value)} />
+            </div>
+            <div className="d-flex align-items-center gap-2">
+              <label htmlFor="buttondisplay" className="font-bold block mb-2">
+                Date
+              </label>
+              <Calendar id="buttondisplay" value={date} onChange={(e) => setDate(e.value)} showIcon />
+            </div>
+          </div>
+          <div>
+            <button className='btn-dashboard-issues'>Save & Publish</button>
+          </div>
+        </div>
+        <div className="card">
+          <FileUpload name="cover[]" url={'/api/upload'} multiple accept="image/*" maxFileSize={2097152} emptyTemplate={<p className="m-0">Drag and drop the <b>Cover</b> here to upload.</p>} />
+        </div>
+      </div>
 
       <div className="dashboardbanners-card">
         <div className={isEditing ? 'dashboardbanners-card-inner' : ''}>
@@ -72,7 +101,7 @@ const DashboardBanners = () => {
             <>
               <p>{bannerTitle}</p>
               <img src={bannerImage} alt="Banner" />
-            </> 
+            </>
           )}
         </div>
         <div className="dashboardbanners-buttons">

@@ -13,6 +13,7 @@
     background-color: #E07F17;
     color: white;
 }
+
 .btn-dashboard-issues:hover {
     background-color: hsl(31, 81%, 43%);
     color: white;
@@ -27,9 +28,25 @@
 .table tbody tr td a {
     text-decoration: none;
 }
+
 .edit-link {
     color: green;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
 }
+
+.edit-link:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+}
+
 .delete-link {
     color: red;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.delete-link:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
 }

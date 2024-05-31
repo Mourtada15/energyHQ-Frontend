@@ -1,4 +1,4 @@
-.createissue-wrapper {
+.mediakit-wrapper {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -9,7 +9,15 @@
     /* background-color: red; */
 }
 
-.createissue-wrapper input:focus {
-    box-shadow: none;
+.mediakit-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.p-button {
+    background: #E07F17;
     border: 1px solid #E07F17;
+}
+.p-button:focus {
+    box-shadow: 0 6px 12px #E07F17
 }
